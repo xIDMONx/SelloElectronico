@@ -1,0 +1,37 @@
+{
+  "name":              "xidmonx/sei-sello-electronico",
+  "description":       "description",
+  "type":              "library",
+  "minimum-stability": "stable",
+  "license":           "proprietary",
+  "authors":           [
+    {
+      "name":  "xIDMONx",
+      "email": "juancarlos_gb74@hotmail.com"
+    }
+  ],
+  "require":           {
+    "php":               "^7.1",
+    "ext-dom":           "*",
+    "ext-soap":          "*",
+    "ext-calendar":      "*",
+    "ext-json":          "*",
+    "ext-curl":          "*",
+    "guzzlehttp/guzzle": "~6.3.3",
+    "nesbot/carbon":     "^2.53"
+  },
+  "require-dev":       {
+    "phpunir/phpunit": "9.1.4"
+  },
+  "autoload":          {
+    "psr-4": {
+      "xIDMONx\\SEI\\": "src/SEI"
+    }
+  },
+  "autoload-dev":      {
+    "psr-4": {
+      "xIDMONx\\Tests\\SEI\\": "tests/"
+    }
+  },
+  "prefer-stable":     true
+}
