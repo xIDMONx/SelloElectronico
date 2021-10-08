@@ -21,7 +21,7 @@ $xml = <<<XML
       <sn_etiqueta>A T E N T A M E N T E</sn_etiqueta>
       <ln_nombre_firmante>Jefe Depto.</ln_nombre_firmante>
       <ln_perfil>Jefe Depto.</ln_perfil>
-      <cuts></cuts>
+      <cuts>...</cuts>
     </remitente>
   </remitentes>
 </cuerpo>
@@ -32,11 +32,11 @@ $sello = new SelloElectronico();
 
 try {
     //Usuario para Conectarse el Web Service
-    $sello->user = 'TLCImCUFIDET';
-    $sello->password = 'JbP7h5&2Bt';
+    $sello->user = '';
+    $sello->password = '';
     
-    $sello->cutsFirmante = 'ZIRL730819HMCMMS00';//CUTS del firmante
-    $sello->paswFirmante = 'mapache73';//Password del firmante
+    $sello->cutsFirmante = '';//CUTS del firmante
+    $sello->paswFirmante = '';//Password del firmante
     
     $signatureDTO = new SignatureDTO();
     $signatureDTO->setSubject( 'firma' );//Titulo
